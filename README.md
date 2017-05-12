@@ -2,7 +2,7 @@ I've found an issue with `shouldNotTypeCheck` where it's not capturing some
 of the deferred type errors at runtime.
 
     $ cabal sandbox init
-    $ cabal install e-dependencies-only --enable-tests
+    $ cabal install --dependencies-only --enable-tests
     $ cabal test --show-details=always
     ...
     Resolving dependencies...
